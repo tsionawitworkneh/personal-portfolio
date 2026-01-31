@@ -528,16 +528,7 @@ section{
     font-size: 1.2rem;
 }
 
-/* Decorative Circle */
-.decorative-circle {
-    position: absolute;
-    bottom: -50px;
-    right: -50px;
-    width: 200px;
-    height: 200px;
-    background: rgba(255, 255, 255, 0.15);
-    border-radius: 50%;
-}
+
 
 /* Right Side - Form Section */
 .contact-form-side {
@@ -605,15 +596,3 @@ section{
     transform: translateY(-2px);
 }
 
-/* Responsive Design */
-@media screen and (max-width: 850px) {
-    .contact-card-container {
-        flex-direction: column;
-    }
-    .contact-info-side, .contact-form-side {
-        width: 100%;
-    }
-    .form-grid {
-        grid-template-columns: 1fr;
-    }
-}
