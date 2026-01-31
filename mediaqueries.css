@@ -72,7 +72,7 @@
     /* Shrink the profile image container */
     .section_pic-container {
         width: 280px;  /* Smaller size for mobile */
-        height: 320px; 
+        height: 300px; 
         border-width: 6px; /* Thinner border for smaller screen */
         margin: 0 auto 2rem auto; /* Centers it and adds bottom spacing */
     }
