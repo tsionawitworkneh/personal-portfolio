@@ -1,7 +1,7 @@
-/* For Tablet and smaller laptops */
+/* --- 1. TABLETS & SMALL LAPTOPS (Width < 1200px) --- */
 @media screen and (max-width: 1200px) {
     section {
-        margin: 0 2rem; /* Reduce the huge 10rem margin */
+        margin: 0 5%; /* Reduce large margins */
     }
     #desktop-nav {
         display: none;
@@ -11,81 +11,113 @@
     }
 }
 
-/* For Mobile Phones */
+/* --- 2. MOBILE PHONES (Width < 600px) --- */
 @media screen and (max-width: 600px) {
-    #profile, .section-container, .about-container, .contact-card-container {
-        flex-direction: column; /* Stack side-by-side elements vertically */
-        height: auto;
-        gap: 2rem;
-    }
-
-    .section_pic-container {
-        width: 250px;
-        height: 250px;
-        margin: 0 auto;
-    }
-
-    /* Stack Projects */
-    #project .about-containers {
-        grid-template-columns: 1fr;
-    }
-
-    /* Contact form adjustment */
-    .contact-info-side, .contact-form-side {
-        width: 100%;
-        border-left: none;
-        border-bottom: 1px solid #eee;
-    }
-
-    .form-grid {
-        grid-template-columns: 1fr;
+    
+    /* Global Section Fixes */
+    section {
+        margin: 0 1rem;
+        height: auto; /* Let content determine height */
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
 
     .title {
-        font-size: 2rem;
+        font-size: 1.8rem; /* Smaller titles so they don't wrap weirdly */
+    }
+
+    /* PROFILE SECTION FIXES */
+    #profile {
+        flex-direction: column;
+        height: auto;
+        gap: 1rem;
+    }
+
+    .section_pic-container {
+        width: 220px;  /* Much smaller image for mobile */
+        height: 220px;
+        margin: 0 auto 1.5rem auto; /* Centers the image */
+        border-width: 6px; /* Thinner border */
     }
 
     .section_text_p2 {
-        font-size: 1.2rem;
+        font-size: 1.1rem; /* Titles like "CEO" stay on fewer lines */
+        padding: 0 1rem;
     }
 
-    .arrow {
-        display: none; /* Hide scroll arrows on mobile to save space */
-    }
-}
-
-
-@media screen and (max-width: 600px) {
-    .footer-links {
-        flex-direction: column; /* Stack links vertically on small phones */
-        gap: 1rem;
-        text-align: center;
-    }
-    
-    .footer {
-        padding: 2rem 1rem;
-    }
-}
-
-
-@media screen and (max-width: 600px) {
-    /* Shrink the profile image container */
-    .section_pic-container {
-        width: 280px;  /* Smaller size for mobile */
-        height: 300px; 
-        border-width: 6px; /* Thinner border for smaller screen */
-        margin: 0 auto 2rem auto; /* Centers it and adds bottom spacing */
-    }
-
-    /* Shrink the About Me image too */
-    #about .section_pic-container {
-        width: 250px;
-        height: 320px;
-    }
-    
-    /* Stack the profile content vertically */
-    #profile {
-        height: auto;
+    /* ABOUT SECTION FIXES */
+    .section-container {
+        flex-direction: column;
         gap: 2rem;
+    }
+
+    .about-containers {
+        flex-direction: column; /* Stack Experience/Education cards */
+        width: 100%;
+    }
+
+    /* EXPERIENCE SECTION FIXES */
+    .about-container {
+        flex-direction: column; /* Stack Technical Skills/Software cards */
+        align-items: center;
+    }
+
+    #experience .details-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 1.5rem 1rem;
+    }
+
+    .experience-skills-list {
+        grid-template-columns: 1fr; /* Switch from 2-columns to 1-column list */
+        gap: 1rem;
+    }
+
+    /* PROJECTS SECTION FIXES */
+    #project .about-containers {
+        grid-template-columns: 1fr; /* One project per row */
+    }
+
+    /* CONTACT SECTION FIXES */
+    .contact-card-container {
+        flex-direction: column; /* Stack Info Sidebar and Form */
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .contact-info-side, .contact-form-side {
+        width: 100%; /* Take full width */
+        padding: 1.5rem;
+        border-left: none;
+    }
+
+    .contact-info-side {
+        border-bottom: 1px solid #eee; /* Divider between info and form */
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr; /* Name and Email stack on top of each other */
+    }
+
+    /* Footer Adjustments */
+    .footer-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    /* Hide the scrolling arrows on mobile to save space */
+    .arrow {
+        display: none;
+    }
+}
+
+/* --- 3. VERY SMALL DEVICES (Width < 350px) --- */
+@media screen and (max-width: 350px) {
+    .section_pic-container {
+        width: 180px;
+        height: 180px;
+    }
+    .title {
+        font-size: 1.5rem;
     }
 }
