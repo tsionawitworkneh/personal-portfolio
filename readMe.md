@@ -23,7 +23,7 @@
 ## 🌐 Live Portfolio
 
 A live version of this portfolio (hosted via GitHub Pages) is available here:  
-(https://<user.github.io/manager-portfolio/)
+[(https://<user.github.io/manager-portfolio/)](https://personal-portfolio-v6ev.vercel.app/)
 
 ---
 
@@ -34,5 +34,6 @@ A live version of this portfolio (hosted via GitHub Pages) is available here:
 - **LinkedIn:** [www.linkedin.com/in/tsionawit-workneh-09a478311]  
 
 ---
+
 
 
