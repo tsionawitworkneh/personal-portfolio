@@ -30,7 +30,7 @@
     <nav id="hamburger-nav">
         <div class="logo">Asmamaw Tsegazeab</div>
         <div class="humberger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -55,7 +55,10 @@
         <div class="section_text">
             <p class="section-text-p1">Hello, I'm</p>
             <h1 class="title">Asmamaw Tsegazeab</h1>
-            <p class="section-text-p2">Senior Mechanical Engineer & CEO of Samunaber Engineering plc</p>
+            <p class="section-text-p2">Senior Mechanical Engineer & CEO of Samunaber Engineering plc
+                
+            </p>
+            
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
                     Download CV
@@ -106,14 +109,15 @@
                 </div>
                 <div class="text-container">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex laboriosam nisi aut quisquam non
-                        minima
-                        odio expedita accusantium. Enim, neque? Fugit ipsum ipsam, sunt excepturi quo illum delectus
-                        fugiat
-                        magni.</p>
+                        I am an experienced mechanical engineering manager with a strong focus on leadership,
+                        operational excellence, and project execution. I have led engineering teams in industrial and
+                        manufacturing settings, ensuring technical accuracy, safety compliance, and timely delivery of
+                        complex mechanical systems.</p>
+                    <br />
 
-                    <p>libero, at cumque! Quisquam, quidem. Quisquam, quidem. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Ex laboriosam nisi aut quisquam non minima odio expedita accusantium
+                    <p>I am passionate about optimizing engineering workflows, mentoring team members, and delivering
+                        reliable, cost-effective engineering solutions that support organizational growth and long-term
+                        success.
                     </p>
 
                 </div>
@@ -230,63 +234,77 @@
 
 
     <section id="contact">
+        <p class="section-text-p1">Get in touch</p>
         <div class="contact-header">
-            <h1 class="title">Get In Touch</h1>
 
+            <h1 class="title">Contact Me</h1>
         </div>
 
         <div class="contact-card-container">
             <!-- Left Sidebar: Contact Info -->
             <div class="contact-info-side">
                 <h2 class="info-title">Contact Information</h2>
-                <p class="info-desc">Fill out the form and our team will get back to you within 24 hours.</p>
+                <p class="info-desc">Fill out the form and I will get back to you within 24 hours.</p>
 
                 <div class="info-details">
                     <div class="info-item">
                         <i class="fa-solid fa-phone"></i>
                         <div>
-                            <p>+8801779717686</p>
-                            <p>+988678363866</p>
+                            <p>+251 911705797</p>
+                            <p>+251 953002308</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class="fa-solid fa-envelope"></i>
-                        <p>support@yourdomain.com</p>
+                        <p>asmamaw@gmail.com</p>
                     </div>
                     <div class="info-item">
                         <i class="fa-solid fa-location-dot"></i>
-                        <p>New York, USA</p>
+                        <p>Addis Ababa, Ethiopia</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: The Form (Now a direct child of card-container) -->
+            <form class="contact-form-side">
+                <div class="form-grid">
+                    <div class="input-group">
+                        <label>Your Name</label>
+                        <input type="text" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Your Email</label>
+                        <input type="email" placeholder="Enter your email" required>
                     </div>
                 </div>
 
+                <div class="input-group full-width">
+                    <label>Your Subject</label>
+                    <input type="text" placeholder="Enter subject here..." required>
+                </div>
 
-                <!-- Right Side: The Form -->
-                <form class="contact-form-side">
-                    <div class="form-grid">
-                        <div class="input-group">
-                            <label>Your Name</label>
-                            <input type="text" placeholder="John Trangely" required>
-                        </div>
-                        <div class="input-group">
-                            <label>Your Email</label>
-                            <input type="email" placeholder="hello@nurency.com" required>
-                        </div>
-                    </div>
+                <div class="input-group full-width">
+                    <label class="label-purple">Message</label>
+                    <textarea placeholder="Write here your message here" rows="4"></textarea>
+                </div>
 
-                    <div class="input-group full-width">
-                        <label>Your Subject</label>
-                        <input type="text" placeholder="I want to hire you quickly" required>
-                    </div>
-
-                    <div class="input-group full-width">
-                        <label class="label-purple">Message</label>
-                        <textarea placeholder="Write here your message" rows="4"></textarea>
-                    </div>
-
-                    <button type="submit" class="btn-submit">Send Message</button>
-                </form>
-            </div>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </div>
     </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2026 Asmamaw Tsegazeab. All Rights Reserved.</p>
+    </footer>
 
 
 
