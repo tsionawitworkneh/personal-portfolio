@@ -1,0 +1,91 @@
+/* For Tablet and smaller laptops */
+@media screen and (max-width: 1200px) {
+    section {
+        margin: 0 2rem; /* Reduce the huge 10rem margin */
+    }
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+}
+
+/* For Mobile Phones */
+@media screen and (max-width: 600px) {
+    #profile, .section-container, .about-container, .contact-card-container {
+        flex-direction: column; /* Stack side-by-side elements vertically */
+        height: auto;
+        gap: 2rem;
+    }
+
+    .section_pic-container {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+    }
+
+    /* Stack Projects */
+    #project .about-containers {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contact form adjustment */
+    .contact-info-side, .contact-form-side {
+        width: 100%;
+        border-left: none;
+        border-bottom: 1px solid #eee;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .section_text_p2 {
+        font-size: 1.2rem;
+    }
+
+    .arrow {
+        display: none; /* Hide scroll arrows on mobile to save space */
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .footer-links {
+        flex-direction: column; /* Stack links vertically on small phones */
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .footer {
+        padding: 2rem 1rem;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    /* Shrink the profile image container */
+    .section_pic-container {
+        width: 280px;  /* Smaller size for mobile */
+        height: 320px; 
+        border-width: 6px; /* Thinner border for smaller screen */
+        margin: 0 auto 2rem auto; /* Centers it and adds bottom spacing */
+    }
+
+    /* Shrink the About Me image too */
+    #about .section_pic-container {
+        width: 250px;
+        height: 320px;
+    }
+    
+    /* Stack the profile content vertically */
+    #profile {
+        height: auto;
+        gap: 2rem;
+    }
+}

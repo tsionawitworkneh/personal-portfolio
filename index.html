@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <title>Document</title>
+    <title>Portfolio</title>
 </head>
 
 <body>
 
     <!--Desktop navigation-->
     <nav id="desktop-nav">
-        <div class="logo">Asmamaw Tsegazeab</div>
+        <div class="logo"><img src="./assets/engineer.png" class="icon"></div>
         <div>
             <ul class="nav-links">
+                <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#project">Projects</a></li>
@@ -28,8 +29,8 @@
 
     <!--Hamburger navigation-->
     <nav id="hamburger-nav">
-        <div class="logo">Asmamaw Tsegazeab</div>
-        <div class="humberger-menu">
+        <div class="logo"><img src="./assets/engineer.png" class="icon"></div>
+        <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
@@ -37,18 +38,20 @@
             </div>
 
 
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
+            <ul class="menu-links">
+                <li><i class="fa-solid fa-house"></i><a href="#" onclick="toggleMenu()"> Home</a></li>
+                <li><i class="fa-solid fa-user"></i><a href="#about" onclick="toggleMenu()"> About</a></li>
+                <li><i class="fa-solid fa-screwdriver-wrench"></i><a href="#experience"
+                        onclick="toggleMenu()">Experience</a></li>
+                <li><i class="fa-solid fa-thumbtack"></i><a href="#project" onclick="toggleMenu()"> Projects</a></li>
+                <li><i class="fa-solid fa-address-card"></i><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
 
         </div>
     </nav>
 
     <section id="profile">
-        <div class="section_pic-container">
+        <div class="section_pic-container blob-image">
             <img src="assets/profile-pic.png" alt="Asmamaw Tsegazeab profile picture">
         </div>
 
@@ -56,9 +59,9 @@
             <p class="section-text-p1">Hello, I'm</p>
             <h1 class="title">Asmamaw Tsegazeab</h1>
             <p class="section-text-p2">Senior Mechanical Engineer & CEO of Samunaber Engineering plc
-                
+
             </p>
-            
+
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
                     Download CV
@@ -292,18 +295,27 @@
             </form>
         </div>
     </section>
-    <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-socials">
+                <img src="./assets/facebook.png" alt="Facebook" class="icon"
+                    onclick="window.open('https://www.facebook.com/asmamaw.tsegazeab')">
+                <img src="./assets/linkedin.png" alt="LinkedIn" class="icon"
+                    onclick="window.open('https://www.linkedin.com/in/asmamaw-tsegazeab')">
+                <img src="./assets/telegram.png" alt="Telegram" class="icon"
+                    onclick="window.open('https://t.me/asmamaw_tsegazeab')">
+                <img src="./assets/social.png" alt="WhatsApp" class="icon"
+                    onclick="window.open('https://github.com/asmamaw-tsegazeab')">
             </div>
-        </nav>
-        <p>Copyright &#169; 2026 Asmamaw Tsegazeab. All Rights Reserved.</p>
+
+            <!-- Level 3: Copyright with a subtle line -->
+            <div class="footer-bottom">
+                <div class="footer-divider"></div>
+                <p>Copyright &#169; 2026 <b>Asmamaw Tsegazeab</b>. All Rights Reserved.</p>
+            </div>
+        </div>
     </footer>
 
 
